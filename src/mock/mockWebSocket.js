@@ -134,27 +134,71 @@ class MockWebSocket {
   }
 
   _addBotPlayers() {
-    const botNames = ['GeoNerd🌍', 'MapMaster🗺️', 'WorldRunner🏃'];
-    const botAvatars = ['🌐', '🎒', '📍'];
-    botNames.forEach((name, i) => {
-      setTimeout(() => {
-        const botId = 'bot_' + i;
-        this.players.set(botId, {
-          name,
-          score: 0,
-          hasGuessedThisRound: false,
-          isHost: false,
-          avatar: botAvatars[i] || '🧭',
-        });
-        this.emit('message', {
-          type: 'playerJoined',
-          players: this._getPlayersArray(),
-        });
-      }, 1000 * (i + 1));
-    });
+    const travelAdjectives = [
+      'Super', 'Geo', 'Atlas', 'Nomad', 'Global', 'Wandering', 'Polar', 'Eco', 'Urban', 'Summit', 
+      'Alpine', 'Desert', 'Oceanic', 'Jungle', 'Safari', 'Star', 'Route', 'Border', 'Island', 'Canyon',
+      'Wild', 'Silent', 'Golden', 'Lost', 'Swift', 'Bold', 'Epic', 'Brave', 'Sunny', 'Stormy'
+    ];
+    const travelNouns = [
+      'Nerd', 'Master', 'Runner', 'Explorer', 'Seeker', 'Hiker', 'Traveler', 'Navigator', 'Climber', 'Ranger',
+      'Citizen', 'Wanderer', 'Guide', 'Expert', 'Lover', 'Geek', 'Spinner', 'Finder', 'Crosser', 'Hopper',
+      'Hunter', 'Watcher', 'Walker', 'Scout', 'Adventurer', 'Voyager', 'Pioneer', 'Glider', 'Drifter', 'Tracker'
+    ];
+    const availableAvatars = ['🧭', '🌐', '🎒', '🗺️', '📍', 'vn', 'us', 'jp', 'gb', 'fr', 'kr', 'de', 'ca', 'au', 'br'];
+
+    const generateBotName = () => {
+      const adj = travelAdjectives[Math.floor(Math.random() * travelAdjectives.length)];
+      const noun = travelNouns[Math.floor(Math.random() * travelNouns.length)];
+      return `${adj}${noun}`;
+    };
+
+    const TARGET_PLAYERS = 40;
+
+    const joinInterval = setInterval(() => {
+      if (this.players.size >= TARGET_PLAYERS) {
+        clearInterval(joinInterval);
+        return;
+      }
+
+      if (this.currentRound > 0) {
+        clearInterval(joinInterval);
+        return;
+      }
+
+      const botId = `bot_${this.players.size}`;
+      let botName = generateBotName();
+      
+      const existingNames = Array.from(this.players.values()).map(p => p.name);
+      while (existingNames.includes(botName)) {
+        botName = generateBotName();
+      }
+
+      const randomAvatar = availableAvatars[Math.floor(Math.random() * availableAvatars.length)];
+
+      this.players.set(botId, {
+        name: botName,
+        score: 0,
+        hasGuessedThisRound: false,
+        isHost: false,
+        avatar: randomAvatar,
+      });
+
+      this.emit('message', {
+        type: 'playerJoined',
+        players: this._getPlayersArray(),
+      });
+    }, 150);
+
+    this.timers.push(joinInterval);
   }
 
   async _startGame() {
+    this.timers.forEach(t => {
+      clearTimeout(t);
+      clearInterval(t);
+    });
+    this.timers = [];
+
     await this._loadCountries();
 
     // Select 5 random countries for rounds
@@ -268,8 +312,9 @@ class MockWebSocket {
         const timer = setTimeout(() => {
           if (p.hasGuessedThisRound) return;
 
+          p.hasGuessedThisRound = true;
+
           if (correct) {
-            p.hasGuessedThisRound = true;
             const timeLeft = Math.max(90 - delay / 1000, 0);
             const isFirst = !this.firstCorrectThisRound;
             if (isFirst) this.firstCorrectThisRound = true;
@@ -284,9 +329,9 @@ class MockWebSocket {
               scoreGained: score,
               totalScore: p.score,
             });
-
-            this._checkAllClear(country);
           }
+
+          this._checkAllClear(country);
         }, delay);
         this.timers.push(timer);
       }
