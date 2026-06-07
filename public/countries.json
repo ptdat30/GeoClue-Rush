@@ -1,0 +1,917 @@
+[
+  {
+    "id": "JP",
+    "name": "Japan",
+    "nameVi": "Nhật Bản",
+    "aliases": ["nippon", "nihon", "nhat ban"],
+    "flag": "🇯🇵",
+    "flagUrl": "https://flagcdn.com/w320/jp.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia này nằm ở châu Á", "emoji": "🌏" },
+      { "type": "population", "text": "Dân số khoảng 125 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Nổi tiếng với núi Phú Sĩ cao 3.776m", "emoji": "🗻" },
+      { "type": "culture", "text": "Quê hương của sushi, anime và samurai", "emoji": "🍣" },
+      { "type": "capital", "text": "Thủ đô: Tokyo", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "VN",
+    "name": "Vietnam",
+    "nameVi": "Việt Nam",
+    "aliases": ["viet nam", "vietnam"],
+    "flag": "🇻🇳",
+    "flagUrl": "https://flagcdn.com/w320/vn.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia này nằm ở Đông Nam Á", "emoji": "🌏" },
+      { "type": "population", "text": "Dân số khoảng 100 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có vịnh Hạ Long - di sản thế giới UNESCO", "emoji": "🏞️" },
+      { "type": "culture", "text": "Nổi tiếng với phở và áo dài", "emoji": "🍜" },
+      { "type": "capital", "text": "Thủ đô: Hà Nội", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "US",
+    "name": "United States",
+    "nameVi": "Hoa Kỳ",
+    "aliases": ["my", "america", "usa", "hoa ky", "nuoc my"],
+    "flag": "🇺🇸",
+    "flagUrl": "https://flagcdn.com/w320/us.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia này nằm ở Bắc Mỹ", "emoji": "🌎" },
+      { "type": "population", "text": "Dân số khoảng 331 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có tượng Nữ thần Tự do ở New York", "emoji": "🗽" },
+      { "type": "culture", "text": "Quê hương của Hollywood và NBA", "emoji": "🎬" },
+      { "type": "capital", "text": "Thủ đô: Washington D.C.", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "FR",
+    "name": "France",
+    "nameVi": "Pháp",
+    "aliases": ["phap", "france"],
+    "flag": "🇫🇷",
+    "flagUrl": "https://flagcdn.com/w320/fr.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia này nằm ở Tây Âu", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 67 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có tháp Eiffel cao 330m", "emoji": "🗼" },
+      { "type": "culture", "text": "Nổi tiếng với rượu vang và bánh croissant", "emoji": "🥐" },
+      { "type": "capital", "text": "Thủ đô: Paris", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "BR",
+    "name": "Brazil",
+    "nameVi": "Brazil",
+    "aliases": ["bra-xin", "braxin", "brazil"],
+    "flag": "🇧🇷",
+    "flagUrl": "https://flagcdn.com/w320/br.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia này nằm ở Nam Mỹ", "emoji": "🌎" },
+      { "type": "population", "text": "Dân số khoảng 214 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có tượng Chúa Cứu Thế ở Rio de Janeiro", "emoji": "⛪" },
+      { "type": "culture", "text": "Quê hương của Carnival và bóng đá Samba", "emoji": "⚽" },
+      { "type": "capital", "text": "Thủ đô: Brasília", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "GB",
+    "name": "United Kingdom",
+    "nameVi": "Vương quốc Anh",
+    "aliases": ["anh", "uk", "england", "vuong quoc anh", "nuoc anh"],
+    "flag": "🇬🇧",
+    "flagUrl": "https://flagcdn.com/w320/gb.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia này nằm ở Tây Âu, trên một hòn đảo", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 67 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có tháp đồng hồ Big Ben nổi tiếng", "emoji": "🕐" },
+      { "type": "culture", "text": "Nổi tiếng với trà chiều và hoàng gia", "emoji": "☕" },
+      { "type": "capital", "text": "Thủ đô: London", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "CN",
+    "name": "China",
+    "nameVi": "Trung Quốc",
+    "aliases": ["trung quoc", "china", "tau"],
+    "flag": "🇨🇳",
+    "flagUrl": "https://flagcdn.com/w320/cn.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia này nằm ở Đông Á", "emoji": "🌏" },
+      { "type": "population", "text": "Dân số khoảng 1.4 tỷ người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có Vạn Lý Trường Thành dài hơn 21.000 km", "emoji": "🏯" },
+      { "type": "culture", "text": "Quê hương của trà, kungfu và gấu trúc", "emoji": "🐼" },
+      { "type": "capital", "text": "Thủ đô: Bắc Kinh", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "IN",
+    "name": "India",
+    "nameVi": "Ấn Độ",
+    "aliases": ["an do", "india"],
+    "flag": "🇮🇳",
+    "flagUrl": "https://flagcdn.com/w320/in.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia này nằm ở Nam Á", "emoji": "🌏" },
+      { "type": "population", "text": "Dân số hơn 1.4 tỷ - đông nhất thế giới", "emoji": "👥" },
+      { "type": "landmark", "text": "Có đền Taj Mahal - kỳ quan thế giới", "emoji": "🕌" },
+      { "type": "culture", "text": "Nổi tiếng với cà ri, yoga và Bollywood", "emoji": "🧘" },
+      { "type": "capital", "text": "Thủ đô: New Delhi", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "AU",
+    "name": "Australia",
+    "nameVi": "Úc",
+    "aliases": ["uc", "australia", "nuoc uc"],
+    "flag": "🇦🇺",
+    "flagUrl": "https://flagcdn.com/w320/au.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia này nằm ở châu Đại Dương", "emoji": "🌏" },
+      { "type": "population", "text": "Dân số khoảng 26 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có nhà hát Opera Sydney hình cánh buồm", "emoji": "🎭" },
+      { "type": "culture", "text": "Quê hương của kangaroo và koala", "emoji": "🦘" },
+      { "type": "capital", "text": "Thủ đô: Canberra", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "DE",
+    "name": "Germany",
+    "nameVi": "Đức",
+    "aliases": ["duc", "germany", "nuoc duc"],
+    "flag": "🇩🇪",
+    "flagUrl": "https://flagcdn.com/w320/de.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia này nằm ở Trung Âu", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 84 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Từng có bức tường Berlin chia đôi đất nước", "emoji": "🧱" },
+      { "type": "culture", "text": "Nổi tiếng với bia, xúc xích và xe hơi", "emoji": "🍺" },
+      { "type": "capital", "text": "Thủ đô: Berlin", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "IT",
+    "name": "Italy",
+    "nameVi": "Ý",
+    "aliases": ["y", "italia", "italy"],
+    "flag": "🇮🇹",
+    "flagUrl": "https://flagcdn.com/w320/it.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia hình chiếc ủng ở Nam Âu", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 60 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có đấu trường Colosseum 2.000 năm tuổi", "emoji": "🏟️" },
+      { "type": "culture", "text": "Quê hương của pizza, pasta và thời trang", "emoji": "🍕" },
+      { "type": "capital", "text": "Thủ đô: Rome", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "EG",
+    "name": "Egypt",
+    "nameVi": "Ai Cập",
+    "aliases": ["ai cap", "egypt"],
+    "flag": "🇪🇬",
+    "flagUrl": "https://flagcdn.com/w320/eg.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia này nằm ở Bắc Phi", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 104 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có kim tự tháp Giza - kỳ quan cổ đại", "emoji": "🔺" },
+      { "type": "culture", "text": "Nổi tiếng với pharaoh và sông Nile", "emoji": "🐫" },
+      { "type": "capital", "text": "Thủ đô: Cairo", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "RU",
+    "name": "Russia",
+    "nameVi": "Nga",
+    "aliases": ["nga", "russia", "nuoc nga"],
+    "flag": "🇷🇺",
+    "flagUrl": "https://flagcdn.com/w320/ru.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia rộng nhất thế giới, trải dài Á-Âu", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 144 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có Điện Kremlin và Quảng trường Đỏ", "emoji": "🏰" },
+      { "type": "culture", "text": "Nổi tiếng với ballet, vodka và búp bê Matryoshka", "emoji": "🪆" },
+      { "type": "capital", "text": "Thủ đô: Moscow", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "KR",
+    "name": "South Korea",
+    "nameVi": "Hàn Quốc",
+    "aliases": ["han quoc", "korea", "south korea"],
+    "flag": "🇰🇷",
+    "flagUrl": "https://flagcdn.com/w320/kr.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia này nằm ở Đông Á, trên bán đảo", "emoji": "🌏" },
+      { "type": "population", "text": "Dân số khoảng 52 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có cung điện Gyeongbokgung 600 năm tuổi", "emoji": "🏯" },
+      { "type": "culture", "text": "Quê hương của K-pop, kimchi và Samsung", "emoji": "🎤" },
+      { "type": "capital", "text": "Thủ đô: Seoul", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "TH",
+    "name": "Thailand",
+    "nameVi": "Thái Lan",
+    "aliases": ["thai lan", "thailand"],
+    "flag": "🇹🇭",
+    "flagUrl": "https://flagcdn.com/w320/th.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia này nằm ở Đông Nam Á", "emoji": "🌏" },
+      { "type": "population", "text": "Dân số khoảng 72 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có chùa Phật Vàng và cung điện Hoàng gia", "emoji": "🛕" },
+      { "type": "culture", "text": "Nổi tiếng với Muay Thai và món Tom Yum", "emoji": "🥊" },
+      { "type": "capital", "text": "Thủ đô: Bangkok", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "MX",
+    "name": "Mexico",
+    "nameVi": "Mexico",
+    "aliases": ["mexico", "me-hi-co"],
+    "flag": "🇲🇽",
+    "flagUrl": "https://flagcdn.com/w320/mx.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia này nằm ở Bắc Mỹ", "emoji": "🌎" },
+      { "type": "population", "text": "Dân số khoảng 130 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có kim tự tháp Chichén Itzá của người Maya", "emoji": "🏛️" },
+      { "type": "culture", "text": "Quê hương của taco, tequila và ngày Lễ Người Chết", "emoji": "🌮" },
+      { "type": "capital", "text": "Thủ đô: Mexico City", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "CA",
+    "name": "Canada",
+    "nameVi": "Canada",
+    "aliases": ["canada", "ca-na-da"],
+    "flag": "🇨🇦",
+    "flagUrl": "https://flagcdn.com/w320/ca.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia rộng thứ hai thế giới, ở Bắc Mỹ", "emoji": "🌎" },
+      { "type": "population", "text": "Dân số khoảng 39 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có thác Niagara hùng vĩ ở biên giới", "emoji": "💧" },
+      { "type": "culture", "text": "Nổi tiếng với siro lá phong và hockey", "emoji": "🍁" },
+      { "type": "capital", "text": "Thủ đô: Ottawa", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "ES",
+    "name": "Spain",
+    "nameVi": "Tây Ban Nha",
+    "aliases": ["tay ban nha", "spain"],
+    "flag": "🇪🇸",
+    "flagUrl": "https://flagcdn.com/w320/es.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia này nằm ở bán đảo Iberia, Tây Nam Âu", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 47 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có nhà thờ Sagrada Família chưa hoàn thành", "emoji": "⛪" },
+      { "type": "culture", "text": "Nổi tiếng với đấu bò, flamenco và paella", "emoji": "💃" },
+      { "type": "capital", "text": "Thủ đô: Madrid", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "AR",
+    "name": "Argentina",
+    "nameVi": "Argentina",
+    "aliases": ["argentina", "ac-hen-ti-na"],
+    "flag": "🇦🇷",
+    "flagUrl": "https://flagcdn.com/w320/ar.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia này nằm ở Nam Mỹ", "emoji": "🌎" },
+      { "type": "population", "text": "Dân số khoảng 46 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có dãy núi Andes và sông băng Perito Moreno", "emoji": "🏔️" },
+      { "type": "culture", "text": "Quê hương của tango, Messi và thịt bò nướng", "emoji": "⚽" },
+      { "type": "capital", "text": "Thủ đô: Buenos Aires", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "ZA",
+    "name": "South Africa",
+    "nameVi": "Nam Phi",
+    "aliases": ["nam phi", "south africa"],
+    "flag": "🇿🇦",
+    "flagUrl": "https://flagcdn.com/w320/za.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia này nằm ở cực nam châu Phi", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 60 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có Mũi Hảo Vọng và vườn quốc gia Kruger", "emoji": "🦁" },
+      { "type": "culture", "text": "Quê hương của Nelson Mandela, có 11 ngôn ngữ chính thức", "emoji": "✊" },
+      { "type": "capital", "text": "Thủ đô hành chính: Pretoria", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "TR",
+    "name": "Turkey",
+    "nameVi": "Thổ Nhĩ Kỳ",
+    "aliases": ["tho nhi ky", "turkey", "turkiye"],
+    "flag": "🇹🇷",
+    "flagUrl": "https://flagcdn.com/w320/tr.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia nằm giữa hai châu lục Á và Âu", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 85 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có thánh đường Hagia Sophia 1.500 năm tuổi", "emoji": "🕌" },
+      { "type": "culture", "text": "Nổi tiếng với kebab, trà Thổ và khinh khí cầu Cappadocia", "emoji": "🎈" },
+      { "type": "capital", "text": "Thủ đô: Ankara", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "GR",
+    "name": "Greece",
+    "nameVi": "Hy Lạp",
+    "aliases": ["hy lap", "greece"],
+    "flag": "🇬🇷",
+    "flagUrl": "https://flagcdn.com/w320/gr.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia này nằm ở Đông Nam Âu", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 10 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có đền Parthenon trên đồi Acropolis", "emoji": "🏛️" },
+      { "type": "culture", "text": "Cái nôi của triết học, Olympic và thần thoại", "emoji": "🏺" },
+      { "type": "capital", "text": "Thủ đô: Athens", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "PE",
+    "name": "Peru",
+    "nameVi": "Peru",
+    "aliases": ["peru", "pe-ru"],
+    "flag": "🇵🇪",
+    "flagUrl": "https://flagcdn.com/w320/pe.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia này nằm ở bờ Tây Nam Mỹ", "emoji": "🌎" },
+      { "type": "population", "text": "Dân số khoảng 34 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có thành phố cổ Machu Picchu trên đỉnh núi", "emoji": "🏔️" },
+      { "type": "culture", "text": "Quê hương của đế chế Inca và món ceviche", "emoji": "🦙" },
+      { "type": "capital", "text": "Thủ đô: Lima", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "NG",
+    "name": "Nigeria",
+    "nameVi": "Nigeria",
+    "aliases": ["nigeria", "ni-gie-ri-a"],
+    "flag": "🇳🇬",
+    "flagUrl": "https://flagcdn.com/w320/ng.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia này nằm ở Tây Phi", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số hơn 220 triệu - đông nhất châu Phi", "emoji": "👥" },
+      { "type": "landmark", "text": "Có rừng nhiệt đới và đồng bằng sông Niger", "emoji": "🌿" },
+      { "type": "culture", "text": "Nổi tiếng với Nollywood và nhạc Afrobeats", "emoji": "🎵" },
+      { "type": "capital", "text": "Thủ đô: Abuja", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "SE",
+    "name": "Sweden",
+    "nameVi": "Thụy Điển",
+    "aliases": ["thuy dien", "sweden"],
+    "flag": "🇸🇪",
+    "flagUrl": "https://flagcdn.com/w320/se.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia Bắc Âu trên bán đảo Scandinavia", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 10 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có cực quang và khách sạn băng nổi tiếng", "emoji": "❄️" },
+      { "type": "culture", "text": "Quê hương của IKEA, ABBA và giải Nobel", "emoji": "🏆" },
+      { "type": "capital", "text": "Thủ đô: Stockholm", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "CH",
+    "name": "Switzerland",
+    "nameVi": "Thụy Sĩ",
+    "aliases": ["thuy si", "switzerland"],
+    "flag": "🇨🇭",
+    "flagUrl": "https://flagcdn.com/w320/ch.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia không giáp biển ở Trung Âu", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 9 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có dãy Alps hùng vĩ và hồ Geneva", "emoji": "🏔️" },
+      { "type": "culture", "text": "Nổi tiếng với đồng hồ, socola và ngân hàng", "emoji": "⌚" },
+      { "type": "capital", "text": "Thủ đô: Bern", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "NZ",
+    "name": "New Zealand",
+    "nameVi": "New Zealand",
+    "aliases": ["new zealand", "niu di lan"],
+    "flag": "🇳🇿",
+    "flagUrl": "https://flagcdn.com/w320/nz.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc đảo ở Nam Thái Bình Dương, gần Úc", "emoji": "🌏" },
+      { "type": "population", "text": "Dân số khoảng 5 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Nơi quay phim Chúa Nhẫn, có núi lửa hoạt động", "emoji": "🌋" },
+      { "type": "culture", "text": "Quê hương của người Maori và điệu nhảy Haka", "emoji": "💪" },
+      { "type": "capital", "text": "Thủ đô: Wellington", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "ID",
+    "name": "Indonesia",
+    "nameVi": "Indonesia",
+    "aliases": ["indonesia", "in-do-ne-xi-a"],
+    "flag": "🇮🇩",
+    "flagUrl": "https://flagcdn.com/w320/id.png",
+    "hints": [
+      { "type": "continent", "text": "Quần đảo lớn nhất thế giới ở Đông Nam Á", "emoji": "🌏" },
+      { "type": "population", "text": "Dân số khoảng 275 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có đảo Bali và đền Borobudur cổ đại", "emoji": "🏝️" },
+      { "type": "culture", "text": "Nổi tiếng với batik, rồng Komodo và nasi goreng", "emoji": "🦎" },
+      { "type": "capital", "text": "Thủ đô mới: Nusantara", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "PH",
+    "name": "Philippines",
+    "nameVi": "Philippines",
+    "aliases": ["philippines", "phi-lip-pin"],
+    "flag": "🇵🇭",
+    "flagUrl": "https://flagcdn.com/w320/ph.png",
+    "hints": [
+      { "type": "continent", "text": "Quần đảo hơn 7.000 đảo ở Đông Nam Á", "emoji": "🌏" },
+      { "type": "population", "text": "Dân số khoảng 114 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có đồi Chocolate và ruộng bậc thang Banaue", "emoji": "🌄" },
+      { "type": "culture", "text": "Nổi tiếng với adobo, karaoke và lễ hội Sinulog", "emoji": "🎤" },
+      { "type": "capital", "text": "Thủ đô: Manila", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "MY",
+    "name": "Malaysia",
+    "nameVi": "Malaysia",
+    "aliases": ["malaysia", "ma-lai-xi-a"],
+    "flag": "🇲🇾",
+    "flagUrl": "https://flagcdn.com/w320/my.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia Đông Nam Á chia thành hai phần bởi biển", "emoji": "🌏" },
+      { "type": "population", "text": "Dân số khoảng 33 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có tháp đôi Petronas từng cao nhất thế giới", "emoji": "🏙️" },
+      { "type": "culture", "text": "Nổi tiếng với nasi lemak và đa văn hóa Malay-Hoa-Ấn", "emoji": "🍛" },
+      { "type": "capital", "text": "Thủ đô: Kuala Lumpur", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "SG",
+    "name": "Singapore",
+    "nameVi": "Singapore",
+    "aliases": ["singapore", "sin-ga-po"],
+    "flag": "🇸🇬",
+    "flagUrl": "https://flagcdn.com/w320/sg.png",
+    "hints": [
+      { "type": "continent", "text": "Đảo quốc nhỏ ở Đông Nam Á, giáp Malaysia", "emoji": "🌏" },
+      { "type": "population", "text": "Dân số khoảng 6 triệu người trên diện tích rất nhỏ", "emoji": "👥" },
+      { "type": "landmark", "text": "Có khách sạn Marina Bay Sands và vườn Gardens by the Bay", "emoji": "🌳" },
+      { "type": "culture", "text": "Nổi tiếng sạch sẽ, có luật cấm nhai kẹo cao su", "emoji": "✨" },
+      { "type": "capital", "text": "Thành phố-quốc gia: Singapore", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "PT",
+    "name": "Portugal",
+    "nameVi": "Bồ Đào Nha",
+    "aliases": ["bo dao nha", "portugal"],
+    "flag": "🇵🇹",
+    "flagUrl": "https://flagcdn.com/w320/pt.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia cực Tây của châu Âu lục địa", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 10 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có tháp Belém và các con phố dốc ở Lisbon", "emoji": "🚃" },
+      { "type": "culture", "text": "Nổi tiếng với nhạc Fado, bánh Pastéis de Nata và Ronaldo", "emoji": "⚽" },
+      { "type": "capital", "text": "Thủ đô: Lisbon", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "NL",
+    "name": "Netherlands",
+    "nameVi": "Hà Lan",
+    "aliases": ["ha lan", "netherlands", "holland"],
+    "flag": "🇳🇱",
+    "flagUrl": "https://flagcdn.com/w320/nl.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia thấp hơn mực nước biển ở Tây Bắc Âu", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 18 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có hệ thống đê biển và cối xay gió nổi tiếng", "emoji": "🌷" },
+      { "type": "culture", "text": "Quê hương của hoa tulip, phô mai Gouda và Van Gogh", "emoji": "🎨" },
+      { "type": "capital", "text": "Thủ đô: Amsterdam", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "PL",
+    "name": "Poland",
+    "nameVi": "Ba Lan",
+    "aliases": ["ba lan", "poland"],
+    "flag": "🇵🇱",
+    "flagUrl": "https://flagcdn.com/w320/pl.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia lớn ở Trung Đông Âu", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 38 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có mỏ muối Wieliczka và phố cổ Kraków", "emoji": "🏰" },
+      { "type": "culture", "text": "Quê hương của Chopin, pierogi và vodka", "emoji": "🎹" },
+      { "type": "capital", "text": "Thủ đô: Warsaw", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "NO",
+    "name": "Norway",
+    "nameVi": "Na Uy",
+    "aliases": ["na uy", "norway"],
+    "flag": "🇳🇴",
+    "flagUrl": "https://flagcdn.com/w320/no.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia Bắc Âu với bờ biển dài nhất châu Âu", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 5.5 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có các vịnh hẹp (fjord) hùng vĩ và cực quang", "emoji": "🌌" },
+      { "type": "culture", "text": "Nổi tiếng với Viking, cá hồi và giải Nobel Hòa bình", "emoji": "⚔️" },
+      { "type": "capital", "text": "Thủ đô: Oslo", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "DK",
+    "name": "Denmark",
+    "nameVi": "Đan Mạch",
+    "aliases": ["dan mach", "denmark"],
+    "flag": "🇩🇰",
+    "flagUrl": "https://flagcdn.com/w320/dk.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia Bắc Âu nhỏ, giáp Đức", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 6 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có tượng Nàng tiên cá nhỏ ở cảng Copenhagen", "emoji": "🧜" },
+      { "type": "culture", "text": "Quê hương của LEGO, Andersen và hygge", "emoji": "🧱" },
+      { "type": "capital", "text": "Thủ đô: Copenhagen", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "FI",
+    "name": "Finland",
+    "nameVi": "Phần Lan",
+    "aliases": ["phan lan", "finland"],
+    "flag": "🇫🇮",
+    "flagUrl": "https://flagcdn.com/w320/fi.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia Bắc Âu giáp Nga và Thụy Điển", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 5.5 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Xứ sở ngàn hồ với hơn 188.000 hồ nước", "emoji": "💧" },
+      { "type": "culture", "text": "Quê hương của ông già Noel, sauna và Nokia", "emoji": "🎅" },
+      { "type": "capital", "text": "Thủ đô: Helsinki", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "AT",
+    "name": "Austria",
+    "nameVi": "Áo",
+    "aliases": ["ao", "austria"],
+    "flag": "🇦🇹",
+    "flagUrl": "https://flagcdn.com/w320/at.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia không giáp biển ở Trung Âu", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 9 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có cung điện Schönbrunn và dãy Alps", "emoji": "🏰" },
+      { "type": "culture", "text": "Quê hương của Mozart, waltz và Wiener Schnitzel", "emoji": "🎻" },
+      { "type": "capital", "text": "Thủ đô: Vienna", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "IE",
+    "name": "Ireland",
+    "nameVi": "Ireland",
+    "aliases": ["ireland", "ai-len", "ai len"],
+    "flag": "🇮🇪",
+    "flagUrl": "https://flagcdn.com/w320/ie.png",
+    "hints": [
+      { "type": "continent", "text": "Đảo quốc phía Tây Bắc châu Âu", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 5 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có vách đá Moher và đồng cỏ xanh bất tận", "emoji": "🌿" },
+      { "type": "culture", "text": "Nổi tiếng với bia Guinness, lễ St. Patrick và nhạc Celtic", "emoji": "☘️" },
+      { "type": "capital", "text": "Thủ đô: Dublin", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "IS",
+    "name": "Iceland",
+    "nameVi": "Iceland",
+    "aliases": ["iceland", "ai-xo-len", "bang dao"],
+    "flag": "🇮🇸",
+    "flagUrl": "https://flagcdn.com/w320/is.png",
+    "hints": [
+      { "type": "continent", "text": "Đảo quốc gần Bắc Cực, giữa Đại Tây Dương", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số chỉ khoảng 370.000 người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có suối nước nóng, núi lửa và sông băng", "emoji": "🌋" },
+      { "type": "culture", "text": "Xứ sở của lửa và băng, nổi tiếng với cực quang", "emoji": "✨" },
+      { "type": "capital", "text": "Thủ đô: Reykjavik", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "CO",
+    "name": "Colombia",
+    "nameVi": "Colombia",
+    "aliases": ["colombia", "co-lom-bi-a"],
+    "flag": "🇨🇴",
+    "flagUrl": "https://flagcdn.com/w320/co.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia Bắc Nam Mỹ, giáp cả Thái Bình Dương và Đại Tây Dương", "emoji": "🌎" },
+      { "type": "population", "text": "Dân số khoảng 52 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có thành phố cổ Cartagena và rừng Amazon", "emoji": "🌴" },
+      { "type": "culture", "text": "Quê hương của cà phê, Shakira và cumbia", "emoji": "☕" },
+      { "type": "capital", "text": "Thủ đô: Bogotá", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "CL",
+    "name": "Chile",
+    "nameVi": "Chile",
+    "aliases": ["chile", "chi-le"],
+    "flag": "🇨🇱",
+    "flagUrl": "https://flagcdn.com/w320/cl.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia dài và hẹp nhất thế giới, ở bờ Tây Nam Mỹ", "emoji": "🌎" },
+      { "type": "population", "text": "Dân số khoảng 19 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có sa mạc Atacama - nơi khô nhất Trái Đất", "emoji": "🏜️" },
+      { "type": "culture", "text": "Nổi tiếng với rượu vang, thơ Neruda và đảo Phục Sinh", "emoji": "🗿" },
+      { "type": "capital", "text": "Thủ đô: Santiago", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "KE",
+    "name": "Kenya",
+    "nameVi": "Kenya",
+    "aliases": ["kenya", "ke-ni-a"],
+    "flag": "🇰🇪",
+    "flagUrl": "https://flagcdn.com/w320/ke.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia Đông Phi nằm trên đường xích đạo", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 55 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có khu bảo tồn Masai Mara và núi Kenya", "emoji": "🦒" },
+      { "type": "culture", "text": "Nổi tiếng với safari, cà phê và vận động viên marathon", "emoji": "🏃" },
+      { "type": "capital", "text": "Thủ đô: Nairobi", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "MA",
+    "name": "Morocco",
+    "nameVi": "Maroc",
+    "aliases": ["maroc", "morocco", "ma-roc"],
+    "flag": "🇲🇦",
+    "flagUrl": "https://flagcdn.com/w320/ma.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia Bắc Phi giáp Đại Tây Dương và Địa Trung Hải", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 37 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có thành phố cổ Marrakech và sa mạc Sahara", "emoji": "🏜️" },
+      { "type": "culture", "text": "Nổi tiếng với trà bạc hà, tagine và thảm dệt tay", "emoji": "🫖" },
+      { "type": "capital", "text": "Thủ đô: Rabat", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "SA",
+    "name": "Saudi Arabia",
+    "nameVi": "Ả Rập Xê Út",
+    "aliases": ["a rap xe ut", "saudi arabia", "saudi"],
+    "flag": "🇸🇦",
+    "flagUrl": "https://flagcdn.com/w320/sa.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia lớn nhất Trung Đông, trên bán đảo Ả Rập", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 36 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có thánh địa Mecca - nơi hành hương của Hồi giáo", "emoji": "🕋" },
+      { "type": "culture", "text": "Nổi tiếng với dầu mỏ, sa mạc và kiến trúc siêu hiện đại", "emoji": "🛢️" },
+      { "type": "capital", "text": "Thủ đô: Riyadh", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "AE",
+    "name": "United Arab Emirates",
+    "nameVi": "Các Tiểu vương quốc Ả Rập Thống nhất",
+    "aliases": ["uae", "dubai", "cac tieu vuong quoc a rap thong nhat", "a rap"],
+    "flag": "🇦🇪",
+    "flagUrl": "https://flagcdn.com/w320/ae.png",
+    "hints": [
+      { "type": "continent", "text": "Liên bang 7 tiểu vương quốc ở Trung Đông", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 10 triệu, 90% là người nước ngoài", "emoji": "👥" },
+      { "type": "landmark", "text": "Có tòa nhà Burj Khalifa - cao nhất thế giới (828m)", "emoji": "🏗️" },
+      { "type": "culture", "text": "Nổi tiếng với xa hoa, siêu xe và đảo nhân tạo Palm", "emoji": "💎" },
+      { "type": "capital", "text": "Thủ đô: Abu Dhabi", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "IL",
+    "name": "Israel",
+    "nameVi": "Israel",
+    "aliases": ["israel", "it-ra-en"],
+    "flag": "🇮🇱",
+    "flagUrl": "https://flagcdn.com/w320/il.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia nhỏ ở Trung Đông, bờ Đông Địa Trung Hải", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 9.5 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có thành cổ Jerusalem và Biển Chết", "emoji": "🏛️" },
+      { "type": "culture", "text": "Nổi tiếng với công nghệ cao và nông nghiệp sa mạc", "emoji": "💻" },
+      { "type": "capital", "text": "Thủ đô tuyên bố: Jerusalem", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "CU",
+    "name": "Cuba",
+    "nameVi": "Cuba",
+    "aliases": ["cuba", "cu-ba"],
+    "flag": "🇨🇺",
+    "flagUrl": "https://flagcdn.com/w320/cu.png",
+    "hints": [
+      { "type": "continent", "text": "Đảo quốc lớn nhất vùng Caribe", "emoji": "🌎" },
+      { "type": "population", "text": "Dân số khoảng 11 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có phố cổ Havana với xe hơi cổ điển đầy màu sắc", "emoji": "🚗" },
+      { "type": "culture", "text": "Nổi tiếng với xì gà, rum và nhạc salsa", "emoji": "🎺" },
+      { "type": "capital", "text": "Thủ đô: Havana", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "JM",
+    "name": "Jamaica",
+    "nameVi": "Jamaica",
+    "aliases": ["jamaica", "gia-mai-ca"],
+    "flag": "🇯🇲",
+    "flagUrl": "https://flagcdn.com/w320/jm.png",
+    "hints": [
+      { "type": "continent", "text": "Đảo quốc vùng Caribe, phía Nam Cuba", "emoji": "🌎" },
+      { "type": "population", "text": "Dân số khoảng 3 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có bãi biển Negril và Đồi Xanh Blue Mountains", "emoji": "🏖️" },
+      { "type": "culture", "text": "Quê hương của Bob Marley, nhạc reggae và Usain Bolt", "emoji": "🎶" },
+      { "type": "capital", "text": "Thủ đô: Kingston", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "MM",
+    "name": "Myanmar",
+    "nameVi": "Myanmar",
+    "aliases": ["myanmar", "mi-an-ma", "burma", "mien dien"],
+    "flag": "🇲🇲",
+    "flagUrl": "https://flagcdn.com/w320/mm.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia Đông Nam Á giáp Ấn Độ và Trung Quốc", "emoji": "🌏" },
+      { "type": "population", "text": "Dân số khoảng 54 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có hơn 2.000 ngôi chùa cổ ở thung lũng Bagan", "emoji": "🛕" },
+      { "type": "culture", "text": "Nổi tiếng với chùa vàng Shwedagon và thanaka", "emoji": "✨" },
+      { "type": "capital", "text": "Thủ đô: Naypyidaw", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "KH",
+    "name": "Cambodia",
+    "nameVi": "Campuchia",
+    "aliases": ["campuchia", "cambodia", "cam-pu-chia"],
+    "flag": "🇰🇭",
+    "flagUrl": "https://flagcdn.com/w320/kh.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia Đông Nam Á giáp Việt Nam và Thái Lan", "emoji": "🌏" },
+      { "type": "population", "text": "Dân số khoảng 17 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có quần thể đền Angkor Wat - lớn nhất thế giới", "emoji": "🏯" },
+      { "type": "culture", "text": "Nổi tiếng với nụ cười Khmer và cơm amok", "emoji": "😊" },
+      { "type": "capital", "text": "Thủ đô: Phnom Penh", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "LA",
+    "name": "Laos",
+    "nameVi": "Lào",
+    "aliases": ["lao", "laos"],
+    "flag": "🇱🇦",
+    "flagUrl": "https://flagcdn.com/w320/la.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia không giáp biển duy nhất ở Đông Nam Á", "emoji": "🌏" },
+      { "type": "population", "text": "Dân số khoảng 7.5 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có sông Mekong chảy qua và thác Kuang Si", "emoji": "💧" },
+      { "type": "culture", "text": "Nổi tiếng với Phật giáo Theravada và lễ hội té nước", "emoji": "🛕" },
+      { "type": "capital", "text": "Thủ đô: Viêng Chăn (Vientiane)", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "NP",
+    "name": "Nepal",
+    "nameVi": "Nepal",
+    "aliases": ["nepal", "ne-pan"],
+    "flag": "🇳🇵",
+    "flagUrl": "https://flagcdn.com/w320/np.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia Nam Á nằm giữa Ấn Độ và Trung Quốc", "emoji": "🌏" },
+      { "type": "population", "text": "Dân số khoảng 30 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có đỉnh Everest - nóc nhà thế giới (8.849m)", "emoji": "🏔️" },
+      { "type": "culture", "text": "Quốc gia duy nhất có cờ không hình chữ nhật", "emoji": "🚩" },
+      { "type": "capital", "text": "Thủ đô: Kathmandu", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "PK",
+    "name": "Pakistan",
+    "nameVi": "Pakistan",
+    "aliases": ["pakistan", "pa-ki-xtan"],
+    "flag": "🇵🇰",
+    "flagUrl": "https://flagcdn.com/w320/pk.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia Nam Á giáp Ấn Độ, Iran và Afghanistan", "emoji": "🌏" },
+      { "type": "population", "text": "Dân số khoảng 230 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có đỉnh K2 - cao thứ hai thế giới và đèo Khyber", "emoji": "🏔️" },
+      { "type": "culture", "text": "Nổi tiếng với cricket, biryani và xe tải trang trí sặc sỡ", "emoji": "🏏" },
+      { "type": "capital", "text": "Thủ đô: Islamabad", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "BD",
+    "name": "Bangladesh",
+    "nameVi": "Bangladesh",
+    "aliases": ["bangladesh", "bang-la-det"],
+    "flag": "🇧🇩",
+    "flagUrl": "https://flagcdn.com/w320/bd.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia Nam Á gần như bị Ấn Độ bao quanh", "emoji": "🌏" },
+      { "type": "population", "text": "Dân số khoảng 170 triệu trên diện tích nhỏ", "emoji": "👥" },
+      { "type": "landmark", "text": "Có rừng ngập mặn Sundarbans lớn nhất thế giới", "emoji": "🌿" },
+      { "type": "culture", "text": "Nổi tiếng với ngành dệt may và hổ Bengal", "emoji": "🐅" },
+      { "type": "capital", "text": "Thủ đô: Dhaka", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "ET",
+    "name": "Ethiopia",
+    "nameVi": "Ethiopia",
+    "aliases": ["ethiopia", "e-ti-o-pi-a"],
+    "flag": "🇪🇹",
+    "flagUrl": "https://flagcdn.com/w320/et.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia Đông Phi không giáp biển, vùng Sừng châu Phi", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 120 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có nhà thờ đá Lalibela và thung lũng Rift", "emoji": "⛪" },
+      { "type": "culture", "text": "Quê hương của cà phê, có lịch riêng 13 tháng", "emoji": "☕" },
+      { "type": "capital", "text": "Thủ đô: Addis Ababa", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "GH",
+    "name": "Ghana",
+    "nameVi": "Ghana",
+    "aliases": ["ghana", "ga-na"],
+    "flag": "🇬🇭",
+    "flagUrl": "https://flagcdn.com/w320/gh.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia Tây Phi trên bờ vịnh Guinea", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 33 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có hồ Volta - hồ nhân tạo lớn nhất thế giới theo diện tích", "emoji": "💧" },
+      { "type": "culture", "text": "Nổi tiếng với ca cao (socola), Kente cloth và Jollof rice", "emoji": "🍫" },
+      { "type": "capital", "text": "Thủ đô: Accra", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "UA",
+    "name": "Ukraine",
+    "nameVi": "Ukraine",
+    "aliases": ["ukraine", "u-crai-na"],
+    "flag": "🇺🇦",
+    "flagUrl": "https://flagcdn.com/w320/ua.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia lớn nhất châu Âu (không tính Nga)", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 37 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có nhà thờ Thánh Sophia và vựa lúa mì châu Âu", "emoji": "🌾" },
+      { "type": "culture", "text": "Nổi tiếng với borscht, trứng Pysanka và hoa hướng dương", "emoji": "🌻" },
+      { "type": "capital", "text": "Thủ đô: Kyiv", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "CZ",
+    "name": "Czech Republic",
+    "nameVi": "Séc",
+    "aliases": ["sec", "czech", "czechia"],
+    "flag": "🇨🇿",
+    "flagUrl": "https://flagcdn.com/w320/cz.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia không giáp biển ở Trung Âu", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 11 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có cầu Charles và lâu đài Praha cổ kính", "emoji": "🌉" },
+      { "type": "culture", "text": "Quốc gia uống bia nhiều nhất thế giới/đầu người", "emoji": "🍺" },
+      { "type": "capital", "text": "Thủ đô: Prague", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "HU",
+    "name": "Hungary",
+    "nameVi": "Hungary",
+    "aliases": ["hungary", "hung-ga-ri"],
+    "flag": "🇭🇺",
+    "flagUrl": "https://flagcdn.com/w320/hu.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia không giáp biển ở Trung Âu", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 10 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có tòa nhà Quốc hội bên sông Danube ở Budapest", "emoji": "🏛️" },
+      { "type": "culture", "text": "Nổi tiếng với suối nước nóng, gulash và khối Rubik", "emoji": "♨️" },
+      { "type": "capital", "text": "Thủ đô: Budapest", "emoji": "🏙️" }
+    ]
+  },
+  {
+    "id": "RO",
+    "name": "Romania",
+    "nameVi": "Romania",
+    "aliases": ["romania", "ru-ma-ni"],
+    "flag": "🇷🇴",
+    "flagUrl": "https://flagcdn.com/w320/ro.png",
+    "hints": [
+      { "type": "continent", "text": "Quốc gia Đông Nam Âu giáp Biển Đen", "emoji": "🌍" },
+      { "type": "population", "text": "Dân số khoảng 19 triệu người", "emoji": "👥" },
+      { "type": "landmark", "text": "Có lâu đài Bran gắn liền với truyền thuyết Dracula", "emoji": "🏰" },
+      { "type": "culture", "text": "Nổi tiếng với vùng Transylvania và dãy Carpathian", "emoji": "🧛" },
+      { "type": "capital", "text": "Thủ đô: Bucharest", "emoji": "🏙️" }
+    ]
+  }
+]
