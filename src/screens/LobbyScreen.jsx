@@ -5,6 +5,7 @@ import useWebSocket from '../hooks/useWebSocket';
 import logo from '../assets/logo.png';
 import playGameImg from '../assets/play_game.png';
 import backImg from '../assets/back.png';
+import { renderAvatar } from '../components/PlayerAvatar';
 
 export default function LobbyScreen() {
   const roomId = useGameStore(s => s.roomId);
@@ -77,12 +78,14 @@ export default function LobbyScreen() {
               {players.map((player, i) => (
                 <motion.div
                   key={player.id}
-                  className="player-chip"
+                  className={`player-chip ${player.isHost ? 'player-chip--host' : ''}`}
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: i * 0.1, duration: 0.3 }}
                 >
-                  <span>{player.name.charAt(0).toUpperCase()}</span>
+                  <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '24px', height: '24px', flexShrink: 0 }}>
+                    {renderAvatar(player.avatar, 20)}
+                  </span>
                   <span>{player.name}</span>
                   {player.isHost && <span>👑</span>}
                   {player.id === playerId && (

@@ -8,6 +8,7 @@ const useGameStore = create((set, get) => ({
   nickname: '',
   isHost: false,
   volume: parseFloat(localStorage.getItem('gcr_volume') ?? '0.5'),
+  avatar: localStorage.getItem('gcr_avatar') ?? '🧭',
 
   // Players
   players: [],
@@ -44,6 +45,10 @@ const useGameStore = create((set, get) => ({
   setVolume: (volume) => {
     localStorage.setItem('gcr_volume', volume.toString());
     set({ volume });
+  },
+  setAvatar: (avatar) => {
+    localStorage.setItem('gcr_avatar', avatar);
+    set({ avatar });
   },
 
   updatePlayers: (players) => set({ players }),

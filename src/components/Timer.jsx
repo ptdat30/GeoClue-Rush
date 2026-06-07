@@ -24,7 +24,7 @@ export default function Timer({ active, duration = 15, onComplete }) {
   return (
     <div className="stack--sm">
       <div className="row row--between">
-        <span className="label">⏱️ Thời gian</span>
+        <span className="label">Thời gian</span>
         <span style={{
           fontWeight: 700,
           fontSize: '1.1rem',

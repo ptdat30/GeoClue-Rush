@@ -30,6 +30,27 @@ export default function App() {
 
   return (
     <>
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          zIndex: -1,
+          filter: 'blur(6px) brightness(0.35) saturate(1.2) contrast(1.05)',
+          pointerEvents: 'none'
+        }}
+      >
+        <source src="/videobackground.mp4" type="video/mp4" />
+      </video>
+
       {renderScreen()}
 
       {/* Floating Settings Gear Icon */}

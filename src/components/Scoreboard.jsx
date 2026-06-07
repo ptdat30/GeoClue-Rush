@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import useGameStore from '../hooks/useGameState';
+import { renderAvatar } from './PlayerAvatar';
 
 export default function Scoreboard({ compact = false }) {
   const players = useGameStore(s => s.players);
@@ -44,9 +45,14 @@ export default function Scoreboard({ compact = false }) {
             <div className={`scoreboard__rank ${getRankClass(index)}`}>
               {getRankIcon(index)}
             </div>
-            <span className="scoreboard__name">
-              {player.name}
-              {player.id === playerId && ' (Bạn)'}
+            <span className="scoreboard__name" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <span style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: '24px', height: '24px', flexShrink: 0 }}>
+                {renderAvatar(player.avatar, 20)}
+              </span>
+              <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                {player.name}
+                {player.id === playerId && ' (Bạn)'}
+              </span>
             </span>
             <span className="scoreboard__score" style={{
               color: index === 0 ? 'var(--gold)' : 'var(--text-primary)',

@@ -1,19 +1,29 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import useGameStore from '../hooks/useGameState';
 import useWebSocket from '../hooks/useWebSocket';
+import { renderAvatar } from './PlayerAvatar';
 
 export default function SettingsModal({ isOpen, onClose }) {
   const volume = useGameStore(s => s.volume);
   const setVolume = useGameStore(s => s.setVolume);
+  const avatar = useGameStore(s => s.avatar);
+  const setAvatar = useGameStore(s => s.setAvatar);
   const phase = useGameStore(s => s.phase);
   const resetGame = useGameStore(s => s.resetGame);
-  const { disconnect } = useWebSocket();
+  const { send, disconnect } = useWebSocket();
 
   const handleQuit = () => {
     if (window.confirm("Bạn có chắc chắn muốn thoát trò chơi và quay lại trang chủ không?")) {
       disconnect();
       resetGame();
       onClose();
+    }
+  };
+
+  const handleAvatarChange = (newAvatar) => {
+    setAvatar(newAvatar);
+    if (phase !== 'HOME') {
+      send('updateAvatar', { avatar: newAvatar });
     }
   };
 
@@ -134,6 +144,48 @@ export default function SettingsModal({ isOpen, onClose }) {
                 </div>
               </div>
 
+              {/* Avatar Selector */}
+              <div className="stack--sm" style={{ marginTop: '16px', borderTop: '1px solid var(--border-glass)', paddingTop: '16px' }}>
+                <div className="row row--between">
+                  <span className="label">🌍 Chọn Quốc kỳ & Avatar</span>
+                </div>
+                <div 
+                  style={{ 
+                    display: 'grid', 
+                    gridTemplateColumns: 'repeat(5, 1fr)', 
+                    gap: '8px', 
+                    marginTop: '8px' 
+                  }}
+                >
+                  {['🧭', '🌐', '🎒', '🗺️', '📍', 'vn', 'us', 'jp', 'gb', 'fr', 'kr', 'de', 'ca', 'au', 'br'].map((item) => {
+                    const isSelected = item === avatar;
+                    return (
+                      <button
+                        key={item}
+                        onClick={() => handleAvatarChange(item)}
+                        style={{
+                          background: isSelected ? 'rgba(255, 234, 167, 0.15)' : 'var(--bg-glass)',
+                          border: isSelected ? '2px solid var(--gold)' : '1px solid var(--border-glass)',
+                          borderRadius: '8px',
+                          aspectRatio: '1',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          cursor: 'pointer',
+                          transition: 'all var(--transition-fast)',
+                          boxShadow: isSelected ? '0 0 8px var(--gold-glow)' : 'none',
+                          transform: isSelected ? 'scale(1.1)' : 'none',
+                          outline: 'none',
+                          padding: '4px'
+                        }}
+                      >
+                        {renderAvatar(item, 24)}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
               {/* Quit Game option */}
               {phase !== 'HOME' && (
                 <div style={{ marginTop: '20px', borderTop: '1px solid var(--border-glass)', paddingTop: '16px' }}>
@@ -146,7 +198,7 @@ export default function SettingsModal({ isOpen, onClose }) {
                       fontWeight: 700
                     }}
                   >
-                    🚪 Thoát Trò Chơi
+                    Thoát Trò Chơi
                   </button>
                   <p className="text-center subtitle" style={{ fontSize: '0.75rem', marginTop: '6px', color: 'var(--text-muted)' }}>
                     Rời khỏi phòng đấu hiện tại và quay về Trang chủ

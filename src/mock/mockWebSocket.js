@@ -58,6 +58,9 @@ class MockWebSocket {
       case 'joinRoom':
         this._joinRoom(msg);
         break;
+      case 'updateAvatar':
+        this._updateAvatar(msg);
+        break;
       case 'startGame':
         this._startGame();
         break;
@@ -77,6 +80,7 @@ class MockWebSocket {
       score: 0,
       hasGuessedThisRound: false,
       isHost: true,
+      avatar: msg.avatar || '🧭',
     });
     this.emit('message', {
       type: 'roomCreated',
@@ -102,6 +106,7 @@ class MockWebSocket {
       score: 0,
       hasGuessedThisRound: false,
       isHost: this.players.size === 0,
+      avatar: msg.avatar || '🧭',
     });
     this.emit('message', {
       type: 'joinedRoom',
@@ -117,8 +122,20 @@ class MockWebSocket {
     this._addBotPlayers();
   }
 
+  _updateAvatar(msg) {
+    const player = this.players.get(this.myConnectionId);
+    if (player) {
+      player.avatar = msg.avatar;
+      this.emit('message', {
+        type: 'playerJoined',
+        players: this._getPlayersArray(),
+      });
+    }
+  }
+
   _addBotPlayers() {
     const botNames = ['GeoNerd🌍', 'MapMaster🗺️', 'WorldRunner🏃'];
+    const botAvatars = ['🌐', '🎒', '📍'];
     botNames.forEach((name, i) => {
       setTimeout(() => {
         const botId = 'bot_' + i;
@@ -127,6 +144,7 @@ class MockWebSocket {
           score: 0,
           hasGuessedThisRound: false,
           isHost: false,
+          avatar: botAvatars[i] || '🧭',
         });
         this.emit('message', {
           type: 'playerJoined',
@@ -166,12 +184,12 @@ class MockWebSocket {
     this.roundStartTime = Date.now();
 
     // Prepare initial masked name
-    const nameVi = country.nameVi;
+    const targetName = country.name;
     const maskedName = [];
     const letterIndices = [];
 
-    for (let i = 0; i < nameVi.length; i++) {
-      const char = nameVi[i];
+    for (let i = 0; i < targetName.length; i++) {
+      const char = targetName[i];
       if (char === ' ') {
         maskedName.push(' ');
       } else {
@@ -201,7 +219,7 @@ class MockWebSocket {
         this.emit('message', {
           type: 'revealLetter',
           index: letterIndex,
-          letter: nameVi[letterIndex],
+          letter: targetName[letterIndex],
         });
       }, revealTime);
       this.timers.push(timer);

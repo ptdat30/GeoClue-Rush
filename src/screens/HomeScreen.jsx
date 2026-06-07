@@ -16,6 +16,7 @@ export default function HomeScreen() {
   const [error, setError] = useState('');
   const { connect, send } = useWebSocket();
   const setNickStore = useGameStore(s => s.setNickname);
+  const avatar = useGameStore(s => s.avatar);
 
   const handleCreate = () => {
     if (!nickname.trim()) {
@@ -25,7 +26,7 @@ export default function HomeScreen() {
     setError('');
     setNickStore(nickname.trim());
     const ws = connect();
-    send('createRoom', { nickname: nickname.trim() });
+    send('createRoom', { nickname: nickname.trim(), avatar });
   };
 
   const handleJoin = () => {
@@ -40,7 +41,7 @@ export default function HomeScreen() {
     setError('');
     setNickStore(nickname.trim());
     const ws = connect();
-    send('joinRoom', { nickname: nickname.trim(), roomId: roomCode.trim().toUpperCase() });
+    send('joinRoom', { nickname: nickname.trim(), roomId: roomCode.trim().toUpperCase(), avatar });
   };
 
   return (

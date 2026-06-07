@@ -84,7 +84,7 @@ body::before {
     radial-gradient(ellipse at 20% 20%, rgba(108, 92, 231, 0.15) 0%, transparent 50%),
     radial-gradient(ellipse at 80% 80%, rgba(0, 206, 201, 0.1) 0%, transparent 50%),
     radial-gradient(ellipse at 50% 50%, rgba(253, 121, 168, 0.05) 0%, transparent 50%);
-  z-index: -1;
+  z-index: -2;
   animation: bgShift 20s ease-in-out infinite alternate;
 }
 
@@ -752,6 +752,13 @@ body::before {
   font-size: 0.9rem;
   font-weight: 500;
   animation: chipAppear 0.3s var(--transition-spring);
+}
+
+.player-chip--host {
+  border-color: var(--gold) !important;
+  box-shadow: 0 0 16px var(--gold-glow), inset 0 0 8px var(--gold-glow);
+  background: rgba(255, 234, 167, 0.12) !important;
+  font-weight: 700 !important;
 }
 
 @keyframes chipAppear {

@@ -70,8 +70,8 @@ export default function GameScreen() {
                 transition={{ duration: 0.5, ease: [0.34, 1.56, 0.64, 1] }}
               >
                 <div className="correct-reveal__flag">{correctAnswer.flag}</div>
-                <div className="correct-reveal__name">{correctAnswer.nameVi}</div>
-                <p className="subtitle" style={{ marginTop: '4px' }}>{correctAnswer.name}</p>
+                <div className="correct-reveal__name">{correctAnswer.name}</div>
+                <p className="subtitle" style={{ marginTop: '4px' }}>{correctAnswer.nameVi}</p>
               </motion.div>
             )}
 
@@ -204,11 +204,11 @@ export default function GameScreen() {
               >
                 {lastAnswerResult.correct ? (
                   <>
-                    ✅ Chính xác! +{lastAnswerResult.scoreGained} điểm
-                    {lastAnswerResult.isFirst && ' 🥇 Đầu tiên!'}
+                    Chính xác! +{lastAnswerResult.scoreGained} điểm
+                    {lastAnswerResult.isFirst && ' (Nhanh nhất!)'}
                   </>
                 ) : (
-                  <>❌ Sai rồi! Thử lại nhé</>
+                  <>Sai rồi! Thử lại nhé</>
                 )}
               </motion.div>
             )}
