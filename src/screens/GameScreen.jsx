@@ -58,7 +58,7 @@ export default function GameScreen() {
     return (
       <div className="screen">
         <div className="container">
-          <div className="stack--xl" style={{ paddingTop: '20px' }}>
+          <div className="stack stack--xl" style={{ paddingTop: '20px' }}>
             <RoundIndicator />
 
             {/* Correct Answer Reveal */}

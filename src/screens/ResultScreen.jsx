@@ -34,7 +34,7 @@ export default function ResultScreen() {
       <ConfettiOverlay trigger={showConfetti} />
 
       <div className="container screen__content">
-        <div className="stack--xl">
+        <div className="stack stack--xl">
           {/* Trophy */}
           <motion.div
             className="text-center"
