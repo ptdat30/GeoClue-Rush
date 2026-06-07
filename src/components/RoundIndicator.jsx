@@ -5,7 +5,7 @@ export default function RoundIndicator() {
   const totalRounds = useGameStore(s => s.totalRounds);
 
   return (
-    <div className="row row--between" style={{ alignItems: 'center' }}>
+    <div className="row" style={{ alignItems: 'center' }}>
       <span className="label">
         Lượt {currentRound}/{totalRounds}
       </span>
