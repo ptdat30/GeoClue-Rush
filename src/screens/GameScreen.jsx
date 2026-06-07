@@ -17,6 +17,7 @@ export default function GameScreen() {
   const lastAnswerResult = useGameStore(s => s.lastAnswerResult);
   const correctAnswer = useGameStore(s => s.correctAnswer);
   const currentFlag = useGameStore(s => s.currentFlag);
+  const currentCountryId = useGameStore(s => s.currentCountryId);
   const roundScores = useGameStore(s => s.roundScores);
   const playerId = useGameStore(s => s.playerId);
   const maskedName = useGameStore(s => s.maskedName);
@@ -69,7 +70,18 @@ export default function GameScreen() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, ease: [0.34, 1.56, 0.64, 1] }}
               >
-                <div className="correct-reveal__flag">{correctAnswer.flag}</div>
+                <div className="correct-reveal__flag" style={{ display: 'flex', justifyContent: 'center', marginBottom: '12px' }}>
+                  <img
+                    src={`https://flagcdn.com/w160/${correctAnswer.id.toLowerCase()}.png`}
+                    alt="Flag"
+                    style={{
+                      width: '80px',
+                      height: 'auto',
+                      borderRadius: '6px',
+                      boxShadow: '0 4px 12px rgba(0,0,0,0.25)'
+                    }}
+                  />
+                </div>
                 <div className="correct-reveal__name">{correctAnswer.name}</div>
                 <p className="subtitle" style={{ marginTop: '4px' }}>{correctAnswer.nameVi}</p>
               </motion.div>
@@ -101,15 +113,22 @@ export default function GameScreen() {
           {/* Round + Flag */}
           <div className="row row--between" style={{ alignItems: 'flex-start' }}>
             <RoundIndicator />
-            {currentFlag && (
-              <motion.span
-                style={{ fontSize: '2.5rem' }}
+            {currentCountryId && (
+              <motion.img
+                src={`https://flagcdn.com/w80/${currentCountryId.toLowerCase()}.png`}
+                alt="Flag"
+                style={{
+                  width: '44px',
+                  height: 'auto',
+                  borderRadius: '4px',
+                  boxShadow: '0 2px 6px rgba(0,0,0,0.2)',
+                  display: 'block',
+                  marginTop: '4px'
+                }}
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ type: 'spring', bounce: 0.5 }}
-              >
-                {currentFlag}
-              </motion.span>
+              />
             )}
           </div>
 
