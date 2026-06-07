@@ -67,7 +67,7 @@ export default function LobbyScreen() {
           >
             <div className="row row--between">
               <span className="label">
-                👥 Người chơi ({players.length}/40)
+                Người chơi ({players.length}/40)
               </span>
               <span className="subtitle" style={{ fontSize: '0.85rem' }}>
                 <span className="waiting-dots">Đang chờ</span>

@@ -43,7 +43,7 @@ export default function AnswerInput({ onSubmit, disabled }) {
       style={{ width: '100%' }}
     >
       <div className="autocomplete__input-wrap">
-        <span className="autocomplete__icon">✍️</span>
+
         <input
           ref={inputRef}
           type="text"
