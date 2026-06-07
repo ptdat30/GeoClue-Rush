@@ -110,27 +110,8 @@ export default function GameScreen() {
     <div className="screen">
       <div className="container">
         <div className="stack" style={{ paddingTop: '10px' }}>
-          {/* Round + Flag */}
-          <div className="row row--between" style={{ alignItems: 'flex-start' }}>
-            <RoundIndicator />
-            {currentCountryId && (
-              <motion.img
-                src={`https://flagcdn.com/w80/${currentCountryId.toLowerCase()}.png`}
-                alt="Flag"
-                style={{
-                  width: '44px',
-                  height: 'auto',
-                  borderRadius: '4px',
-                  boxShadow: '0 2px 6px rgba(0,0,0,0.2)',
-                  display: 'block',
-                  marginTop: '4px'
-                }}
-                initial={{ scale: 0 }}
-                animate={{ scale: 1 }}
-                transition={{ type: 'spring', bounce: 0.5 }}
-              />
-            )}
-          </div>
+          {/* Round Indicator */}
+          <RoundIndicator />
 
           {/* Timer */}
           <Timer active={phase === 'PLAYING'} duration={90} onComplete={handleTimeUp} />
